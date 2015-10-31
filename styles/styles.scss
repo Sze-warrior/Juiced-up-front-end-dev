@@ -1,0 +1,579 @@
+/*This is where we will import any extra SASS files*/
+@import 'main';
+@import 'responsiveNavbar';
+/*This is where we will import any extra SASS files*/
+
+
+/*This is where we will place our variables*/
+$inner-padding: 15px;
+$white-text: #fff;
+$transparent-color: transparent;
+$minimum-width: 320px;
+$maximum-width: 100%;
+$mainFont: 'helvetica';
+$paragraph-font-size: 16.5px;
+$paragraph-line-height: 1.3em;
+$paragraph-padding-top: 20px;
+$paragraph-padding-bottom: 20px;
+$heading2-padding-top: 20px;
+$heading2-padding-bottom: 20px;
+$footer-color: #C53616;
+$green: #047051;
+$black: #000;
+$h2-font-size: 30px;
+$h3-font-size: 20px;
+$value-zero: 0px;
+$value-ten: 10px;
+$value-twenty-five: 25px;
+$value-sixty-five: 65px;
+$width-xsmall:  414px;
+$width-small:  415px;
+$width-xmedium: 615px;
+$width-medium: 768px;
+$width-large:  1024px;
+/*This is where we will place our variables*/
+
+/*This is where we will style the h2 headings*/
+h2{
+	padding-top: $heading2-padding-top;
+	padding-bottom: $heading2-padding-bottom;
+	text-align: center;
+	font-size: $h2-font-size;
+	font-family: $mainFont;
+	color: $green;
+}
+/*This is where we will style the h2 headings*/
+
+
+/*This is where we will style the h3 headings*/
+h3{
+	padding-bottom: $heading2-padding-bottom;
+	text-align: left;
+	font-size: $h3-font-size;
+	font-family: $mainFont;
+	color: $green;
+}
+/*This is where we will style the h3 headings*/
+
+
+/*This is where we will style the p tags and have*/
+/*media queries applied to them*/
+p{
+	font-size:$paragraph-font-size;
+	line-height: $paragraph-line-height;
+	padding-top: $paragraph-padding-top;
+	padding-bottom: $paragraph-padding-bottom;
+	font-family: $mainFont;
+
+
+//This media query is for smaller Mobile size
+	@media screen and (max-width:$width-xsmall){
+		padding:$value-twenty-five;
+	}
+
+//This media query is for Mobile size
+	@media screen and (max-width:$width-small){
+		padding:$value-twenty-five;
+	}
+
+//This media query is for 605px
+	@media screen and (max-width:$width-xmedium){
+		padding:$value-twenty-five;
+	}
+
+//This media query is for Ipad Portrait
+	@media screen and (max-width:$width-medium){
+		padding:$value-twenty-five;
+	}
+
+//This media querie is for Ipad landscape
+		@media screen and (max-width:$width-large){
+	padding:$value-ten;
+
+	}
+}
+/*This is where we will style the p tags and have*/
+/*media queries applied to them*/
+
+/*This is where we will style the a tags*/
+a{
+	color: $white-text;
+		-webkit-transition: all 0.2s ease 0s; 
+	-moz-transition: all 0.2s ease 0s; 
+	-o-transition: all 0.2s ease 0s; 
+	transition: all 0.2s ease 0s;
+}
+
+a:hover{
+	color: $green;
+		-webkit-transition: all 0.2s ease 0s; 
+	-moz-transition: all 0.2s ease 0s; 
+	-o-transition: all 0.2s ease 0s; 
+	transition: all 0.2s ease 0s;
+}
+/*This is where we will style the a tags*/
+
+/*This is where we will style the class locations-header*/
+/*with media queries*/
+.locations-header{
+	padding-left: $value-zero;
+
+	//This media query is for smaller Mobile size
+	@media screen and (max-width:$width-xsmall){
+		padding-left:$value-ten;
+	}
+
+//This media query is for Mobile size
+	@media screen and (max-width:$width-small){
+		padding-left:$value-ten;
+	}
+//This media query is for 605px
+	@media screen and (max-width:$width-xmedium){
+		padding-left:$value-ten;
+	}
+
+//This media query is for Ipad Portrait
+	@media screen and (max-width:$width-medium){
+		padding-left:$value-ten;
+	}
+
+//This media querie is for Ipad landscape
+		@media screen and (max-width:$width-large){
+		padding-left:$value-ten;
+	}
+}
+
+
+/*This is where we will style the class locations-header*/
+/*with media queries*/
+.locations {
+
+	 font-family: 'helvetica', arial;
+	 list-style-type: none;
+	 font-size: 16px;
+	 padding-left:$value-zero;
+
+li{
+	 padding: 0px 0px 19px 0px;
+
+a{
+	color: $black;
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease 0s;
+  	-moz-transition: all 0.2s  ease 0s;
+  	-o-transition: all 0.2s  ease 0s;
+  	transition: all 0.2s  ease 0s;
+}
+
+a:hover{
+	color: $green;
+	-webkit-transition: all 0.2s ease 0s; 
+	-moz-transition: all 0.2s ease 0s; 
+	-o-transition: all 0.2s ease 0s; 
+	transition: all 0.2s ease 0s;
+	text-decoration: underline;
+}
+
+
+//This media query is for smaller Mobile size
+	@media screen and (max-width:$width-xsmall){
+		padding-left:$value-ten;
+	}
+
+//This media query is for Mobile size
+	@media screen and (max-width:$width-small){
+		padding-left:$value-ten;
+}
+//This media query is for 605px
+	@media screen and (max-width:$width-xmedium){
+		padding-left:$value-ten;
+	}
+
+//This media query is for Ipad Portrait
+	@media screen and (max-width:$width-medium){
+		padding-left:$value-ten;	
+	}
+
+//This media querie is for Ipad landscape
+		@media screen and (max-width:$width-large){
+		padding-left:$value-ten;
+	}
+  }	
+}
+/*This is where we will style the class locations-header*/
+/*with media queries*/
+
+/*This is where we will style the class pad-top*/
+.pad-top{
+	padding-top: $value-sixty-five;
+}
+/*This is where we will style the class pad-top*/
+
+
+/*This is where we will style the class pad-bottom*/
+.pad-bottom{
+	padding-bottom: $value-sixty-five;
+}
+/*This is where we will style the class pad-bottom*/
+
+
+/*This is where we will style the class text*/
+.text{
+	background-color: $transparent-color;
+}
+/*This is where we will style the class text*/
+
+
+/*This is where we will style the class banner img on the home page*/
+.banner-img{
+	//This media query is for smaller Mobile size
+	@media screen and (max-width:$width-xsmall){
+		width: $maximum-width;
+		margin: 0 auto;
+		float: center;
+		height: 160px;
+	}
+
+	//This media query is for Mobile size
+	@media screen and (max-width:$width-small){
+		width: $maximum-width;
+		margin: 0 auto;
+		float: center;
+		height: 160px;
+	}
+
+	//This media query is for 615px
+	@media screen and (max-width:$width-xmedium){
+    max-width:$maximum-width;
+		margin: 0 auto;
+		float: center;
+
+	}
+
+	//This media query is for 745px
+	@media screen and (max-width:745px){
+		width: $maximum-width;
+		margin: 0 auto;
+		float: center;
+	}
+
+	//This media query is for Ipad Portrait
+	@media screen and (max-width:$width-medium){
+		width: $maximum-width;
+
+	}
+
+	//This media querie is for Ipad landscape
+	@media screen and (max-width:$width-large){
+		width: $maximum-width;
+
+	}
+}
+/*This is where we will style the class banner img on the home page*/
+
+/*This is where we will style the class img-responsive*/
+.img-responsive{
+    max-width:$maximum-width;
+    float: center;
+
+   	//This media query is for smaller Mobile size
+	@media screen and (max-width:$width-xsmall){
+    	max-width:$maximum-width;
+		padding: 0px 0px 0px 12px;
+	}
+
+//This media query is for Mobile size
+	@media screen and (max-width:$width-small){
+    	max-width:$maximum-width;
+		padding: 0px 0px 0px 12px;
+
+	}
+
+//This media query is for 615px
+	@media screen and (max-width:$width-xmedium){
+    	max-width:$maximum-width;
+		margin: 0 auto;
+		float: center;
+		padding: 0px 0px 0px 10px;
+
+	}
+
+	//This media query is for 745px
+	@media screen and (max-width:745px){
+		width: 95%;
+		margin: 0 auto;
+		float: center;
+		padding: 0px 0px 0px 10px;
+	}
+}
+/*This is where we will style the class img-responsive*/
+
+
+/*This is where we will style the class img-responsive-banner*/
+.img-responsive-banner{
+    max-width:$maximum-width;
+    float: center;
+
+   	//This media query is for smaller Mobile size
+	@media screen and (max-width:$width-xsmall){
+		width: 90%;
+		padding: 0px 0px 0px 0px;
+		float: left;
+	}
+
+//This media query is for Mobile size
+	@media screen and (max-width:$width-small){
+		width: 90%;
+		padding: 0px 0px 0px 0px;
+		float: left;
+
+	}
+
+//This media query is for 615px
+	@media screen and (max-width:$width-xmedium){
+		width: $maximum-width;
+		margin: 0 auto;
+		float: center;
+
+	}
+
+//This media query is for 745px
+	@media screen and (max-width:745px){
+		width: $maximum-width;
+		margin: 0 auto;
+		float: center;
+	}
+}
+/*This is where we will style the class img-responsive-banner*/
+
+
+/*This is where we will style the class danger for the contact form*/
+.danger {
+  padding-top: $value-ten;
+  color: red;
+  font-size: 15px;
+}
+/*This is where we will style the class danger for the contact form*/
+
+
+/*This is where we will style the class forum_group for the contact form*/
+.form_group {
+	margin: 1em 0;
+	position: relative;
+	font-family: 'helvetica',arial;
+}
+/*This is where we will style the class forum_group for the contact form*/
+
+
+/*This is where we will style the input fields*/
+input{
+	margin-top: $value-ten;
+	width: 280px;
+	height: 22px;
+	border-radius: 5px;
+	border: 2px solid $green;
+	font-size: 20px;
+	padding:6px;
+
+		//This media query is for smaller Mobile size
+	@media screen and (max-width:$width-xsmall){
+		width: 96%;
+	}
+
+//This media query is for Mobile size
+	@media screen and (max-width:$width-small){
+		width: 96%;
+	}
+
+//This media query is for 605px
+	@media screen and (max-width:$width-xmedium){
+		width: 96%;
+	}
+}
+/*This is where we will style the input fields*/
+
+
+/*This is where we will style the select fields*/
+select{
+	margin-top: 10px;
+	width: 295px;
+	height: 35px;
+	border-radius: 5px;
+	border: 2px solid #035c42;
+	font-size: 16px;
+	padding:6px;
+
+	//This media query is for smaller Mobile size
+	@media screen and (max-width:$width-xsmall){
+		width: 100%;
+	}
+
+//This media query is for Mobile size
+	@media screen and (max-width:$width-small){
+		width: 100%;
+	}
+
+//This media query is for 605px
+	@media screen and (max-width:$width-xmedium){
+		width: 100%;
+	}	
+}
+/*This is where we will style the select fields*/
+
+
+/*This is where we will style the id contact-form*/
+#contact-form{
+	font-size:$paragraph-font-size;
+	line-height: $paragraph-line-height;
+	padding-bottom: $paragraph-padding-bottom;
+
+
+//This media query is for smaller Mobile size
+	@media screen and (max-width:$width-xsmall){
+		padding:25px;
+	}
+
+//This media query is for Mobile size
+	@media screen and (max-width:$width-small){
+		padding:25px;
+	}
+
+//This media query is for 605px
+	@media screen and (max-width:$width-xmedium){
+		padding:25px;
+	}
+
+//This media query is for Ipad Portrait
+	@media screen and (max-width:$width-medium){
+	padding:25px;
+	}
+
+//This media querie is for Ipad landscape
+	@media screen and (max-width:$width-large){
+	padding:10px;
+
+	}
+}
+/*This is where we will style the id contact-form*/
+
+
+/*This is where we will style the id map-canvas*/
+#map-canvas{
+	height: 500px;
+}
+/*This is where we will style the id map-canvas*/
+
+
+/*This is where we will style the footer for the site*/
+ footer {
+	border-top: 18px solid #912108;
+  	padding: 10px 0px 0px 0px;
+    margin-top: 6em;
+    height: 9em;
+    background-color: $footer-color;
+    width: 100%;
+  	clear:both;
+    bottom: 0px;
+    right:0px;
+
+	.copyright-content{
+	    width: 240px;
+	    color: #fff;
+
+	//This media query is for smaller Mobile size
+	@media screen and (max-width:$width-xsmall){
+	 font-size: 12px;
+	 padding-top: 0px;
+	 width: 50%;
+	}
+
+	//This media query is for Mobile size
+	@media screen and (max-width:$width-small){
+	 font-size: 12px;
+	 padding-top: 0px;
+	 width: 50%;
+	}
+}
+
+/*This is where we will style the class button-top which here */
+/*is the back to top button */
+ .button-top {
+	  	float: right;
+	  	text-align: right;
+	  	border: 3px solid #fff;
+	  	border-radius: 10px;
+	 	margin-top: 15px;
+	  	margin-right: 15px;
+		-webkit-transition: all 0.2s ease 0s; 
+		-moz-transition: all 0.2s ease 0s; 
+		-o-transition: all 0.2s ease 0s; 
+		transition: all 0.2s ease 0s;
+
+	p{
+	   font-size: 14px;
+  	   padding: 0px 9px 0px 7px;
+  	   color: #fff;
+	}
+
+//This media query is for smaller Mobile size
+	@media screen and (max-width:$width-xsmall){
+		padding:0px 8px 0px 8px;
+		margin-right: 20px;
+
+	}
+
+//This media query is for Mobile size
+	@media screen and (max-width:$width-small){
+		padding:0px 8px 0px 8px;
+		margin-right: 20px;
+	}
+}
+
+ .button-top:hover{
+ 	  border: 3px solid #035c42;
+ 	  cursor: pointer;
+ 	  -webkit-transition: all 0.2s ease 0s; 
+	  -moz-transition: all 0.2s ease 0s; 
+	  -o-transition: all 0.2s ease 0s; 
+	  transition: all 0.2s ease 0s;
+
+
+	p{
+  	  padding: 0px 9px 0px 7px;
+  	  color: #035c42;
+  	  -webkit-transition: all 0.2s ease 0s; 
+	  -moz-transition: all 0.2s ease 0s; 
+	  -o-transition: all 0.2s ease 0s; 
+	  transition: all 0.2s ease 0s;
+	}
+  }
+}
+/*This is where we will style the class button-top which here */
+/*is the back to top button */
+
+
+/*This is where we will style the class active */
+  .active{
+	  text-decoration: underline;
+  }
+/*This is where we will style the class active */
+
+
+/*This is where we will style the submit button */
+.submit_button, .submit_button:link, .submit_button:visited {
+  transition: all 0.2s ease 0s;
+  border: transparent;
+  padding: 15px 25px 15px 25px;
+  border-radius: 10px;
+  background-color: #035c42;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.submit_button:hover, .submit_button:focus, .submit_button:active {
+	color: #fff;
+	background-color: #074C38;
+	cursor:pointer;
+}
+/*This is where we will style the submit button */

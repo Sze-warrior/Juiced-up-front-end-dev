@@ -1,0 +1,26 @@
+[{
+	"name": "Karori",
+	"lat": -41.283663,
+	"lng": 174.740034,
+	"content": "Karori Central Juiced Up bar."
+},{
+	"name": "Wellington Central",
+	"lat": -41.286493, 
+	"lng": 174.776001,
+	"content": "Wellington Central Juiced Up bar."
+}, {
+	"name": "Brooklyn",
+	"lat": -41.306006,
+	"lng": 174.762582,
+	"content": "Brooklyn Central Juiced Up bar."
+}, {
+	"name": "Thorndon",
+	"lat": -41.276399, 
+	"lng": 174.777297,
+	"content": "Thorndon Central Juiced Up bar."
+}, {
+	"name": "Newtown",
+	"lat": -41.310820,
+	"lng": 174.778917,
+	"content": "Newtown Central Juiced Up bar."
+}]

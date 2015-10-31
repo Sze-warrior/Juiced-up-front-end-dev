@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Juiced Up website">
+    <meta name="author" content="Juiced Up is your one stop point for freshly made juices in classy jars for all to drink up on the go.">
+
+    <title>Juiced Up >> Ordering with Juiced Up</title>
+
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+  </head>
+
+  <body>
+
+	<header>
+		<div class="container">
+			<a href="index.html"><h1 id="logo"> <img src="img/logo.png" alt="Juiced Up logo"> <i>Juiced Up</i></h1></a>
+
+			<div class="handle">
+				<a id="nav-toggle" href="#"><span></span></a>
+			</div>
+
+			<nav>
+				<ul class="navbar">
+					<li><a href="menu.html">Our Juice</a></li>
+					<li><a href="order.html">Order Online</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-12">
+
+			<h2>Get your juice online:</h2>
+
+			<p>Ordering a juice online with us is easy! Just fill out the form below and once it is submitted to your chosen bar, we'll have it ready for you. Juices are ready for you in a maximum set time of 5 minutes.</p>
+			</div>
+		</div>	 
+
+		<div class="row">
+			<div class="col-6">
+
+				<form method="POST" id="contact-form" novalidate>
+
+				<div class="form_group">
+					<label for="firstname"><b>First Name</b></label><br>
+					<input id="firstname" name="firstname" type="text" required class="fv-minlength-2 hello">
+					<div id="firstname-error" class="danger"></div>
+				</div>
+
+				<div class="form_group pad_top">
+					<label for="lastname"><b>Last Name</b></label><br>
+					<input id="lastname" name="lastname" type="text" required class="fv-minlength-2 hello">
+					<div id="lastname-error" class="danger"></div>
+				</div>
+
+				<div class="form_group pad_top">
+					<label for="juice"><b>Juice to Purchase</b></label><br>
+					<select id="juice" name="juice" required>
+						<option value="">Select a juice</option>
+						<option value="mango tango">Mango Tango</option>
+						<option value="orange tropic">Orange Tropic</option>
+						<option value="all berry">All Berry</option>
+						<option value="orange and apple">Orange and Apple
+						</option>
+						<option value="pineapple">Pineapple</option>
+						<option value="strawberry">Strawberry</option>
+						<option value="passion fruit">Passion Fruit</option>
+						<option value="carrot juice">Carrot Juice</option>
+						<option value="lime lemon">Lime Lemon</option>
+
+					</select> 
+					<div id="juice-error" class="danger"></div>
+				</div>
+
+				<div class="form_group pad_top">
+					<label for="size"><b>Size of your purchase</b></label><br>
+					<select id="size" name="size" required>
+						<option value="">Select a Size</option>
+						<option value="small">Small</option>
+						<option value="medium">Medium</option>
+						<option value="large">Large</option>
+						<option value="extra-large">Extra Large</option>
+					</select> 
+					<div id="size-error" class="danger"></div>
+				</div>
+
+				<div class="form_group pad_top">
+					<label for="location">Location to pick up</label><br>
+
+					<select class="location-label" id="location" name="location" required>
+						<option value="">Select a location</option>
+						<option value="thorndon">Thorndon</option>
+						<option value="karori">Karori</option>
+						<option value="wellington">Wellington Central</option>
+						<option value="brooklyn">Brooklyn</option>
+						<option value="newtown">Newtown</option>
+
+					</select> 
+					<div id="location-error" class="danger"></div>
+				</div>
+				<div class="form_group pad_top">
+					<button class="submit_button" type="submit">Send</button>
+				</div>
+			</form>
+
+		</div>			
+
+		<div class="col-6 pad-top pad-bottom">
+			<img class="img-responsive" alt="Inside a Juiced Up bar" src="img/juiced-up-interior.jpg">
+		</div>
+		
+	</div>
+	</div>
+
+    <footer>
+      <div class="container">
+	    <div class="button-top"> 
+	        <p>Back to top</p>
+	    </div>
+	    <div class="copyright-content">
+	        <p>&copy; Copyright Juiced Up 2015. All rights reserved to Juiced Up except where noted. Website design by XYZ Designs.
+	        </p>
+		</div>
+     </div>
+    </footer>
+
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="javascript/jquery_animations.js"></script>   
+
+
+	<script src="javascript/form-validation-kit.js"></script>
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+
+		var contactForm = document.querySelector("#contact-form");
+
+		addFormValidation(contactForm);
+
+	});
+	</script>
+  </body>
+</html>

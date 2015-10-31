@@ -1,0 +1,297 @@
+/*This is where we will import any extra SASS files*/
+/*This is where we define variables*/
+/*This is where we define variables*/
+/*This is where we style the body to be default zero*/
+body { margin: 0px; padding: 0px; }
+
+/*This is where we style the body to be default zero*/
+/*This is to style the container class that will hold our content*/
+.container { min-width: 320px; max-width: 960px; margin: 0 auto; }
+
+/*This is to style the container class that will hold our content*/
+/*This is to style the row*/
+.row { width: 100%; float: left; }
+
+/*This is to style the row*/
+/*This is to style the different sized columns*/
+/*This includes the media queries for the columns.*/
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { min-height: 40px; margin-left: 2.5%; display: inline-block; float: left; margin: 0px 0px 5px 18px; }
+@media screen and (max-width: 414px) { .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { float: none; width: 100% !important; margin: 0px 0px 5px 0px; box-sizing: border-box; padding: 0px; } }
+@media screen and (max-width: 415px) { .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { float: none; width: 100% !important; margin: 0px 0px 5px 0px; box-sizing: border-box; } }
+@media screen and (max-width: 615px) { .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { float: none; width: 100% !important; margin: 0px 0px 5px 0px; box-sizing: border-box; } }
+@media screen and (max-width: 768px) { .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { float: left; margin: 0px 0px 5px 0px; } }
+
+/*This is to style the different sized columns*/
+/*This includes the media queries for the columns.*/
+/*The first child classes here will ensure that each of the */
+/*first classes here will have a margin-left value of 0 */
+.col-1:first-child, .col-2:first-child, .col-3:first-child, .col-4:first-child, .col-5:first-child, .col-6:first-child, .col-7:first-child, .col-8:first-child, .col-9:first-child, .col-10:first-child, .col-11:first-child, .col-12:first-child { margin-left: 0px; }
+
+/*The first child classes here will ensure that each of the */
+/*first classes here will have a margin-left value of 0 */
+/*The first child classes here will ensure that each of the */
+/*first classes here will have a margin-right value of 0 */
+.col-1:last-child, .col-2:last-child, .col-3:last-child, .col-4:last-child, .col-5:last-child, .col-6:last-child, .col-7:last-child, .col-8:last-child, .col-9:last-child, .col-10:last-child, .col-11:last-child, .col-12:last-child { margin-right: 0px; }
+
+/*The first child classes here will ensure that each of the */
+/*first classes here will have a margin-right value of 0 */
+/*The first col size */
+.col-1 { width: 6%; }
+
+/*The first col size */
+/*The second col size */
+.col-2 { width: 14.55%; }
+
+/*The second col size */
+/*The third col size */
+.col-3 { width: 23.1%; }
+
+/*The third col size */
+/*The forth col size */
+.col-4 { width: 31.6333%; }
+
+/*The forth col size */
+/*The fifth col size */
+.col-5 { width: 40.93%; }
+
+/*The fifth col size */
+/*The sixth col size */
+.col-6 { width: 48.6%; }
+
+/*The sixth col size */
+/*The seventh col size */
+.col-7 { width: 56.333%; }
+
+/*The seventh col size */
+/*The eighth col size */
+.col-8 { width: 65.38%; }
+
+/*The eighth col size */
+/*The ninth col size */
+.col-9 { width: 74%; }
+
+/*The ninth col size */
+/*The tenth col size */
+.col-10 { width: 82.633%; }
+
+/*The tenth col size */
+/*The eleventh col size */
+.col-11 { width: 91%; }
+
+/*The eleventh col size */
+/*The twelfth col size */
+.col-12 { width: 100%; }
+
+/*The twelfth col size */
+/*This is where we will place our variables*/
+/*This is where we will place our variables*/
+/*This is where the header is styled for the website*/
+header { background-color: #E44928; padding-top: 8px; padding-bottom: 10px; color: #fff; text-align: left; height: 80px; width: 100%; }
+
+/*This is where the header is styled for the website*/
+/*This is where the header h1 logo is styled for the website*/
+/*We have also included media queries for this websites header h1*/
+header h1 { margin: 0; padding: .50em .55em .55em .35em; font-family: 'helvetica', arial; font-size: 20px; font-weight: 10px; }
+header h1 i { padding-top: 30px; color: #047051; }
+@media screen and (max-width: 414px) { header h1 { padding: .50em .55em .55em 0.8em; } }
+@media screen and (max-width: 415px) { header h1 { padding: .50em .55em .55em 0.8em; } }
+@media screen and (max-width: 605px) { header h1 { padding: .50em .55em .55em 0.8em; } }
+@media screen and (max-width: 768px) { header h1 { float: left; padding: .50em .55em .55em 0.8em; } }
+@media screen and (max-width: 1024px) { header h1 { float: left; padding: .50em .55em .55em 0.8em; } }
+
+/*This is where the header h1 logo is styled for the website*/
+/*We have also included media queries for this websites header h1*/
+/*This is where the id logo is styled*/
+#logo { float: left; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+
+/*This is where the id logo is styled*/
+/*This is where the nav is styled with media queries added too*/
+nav { float: right; }
+@media screen and (max-width: 414px) { nav { width: 100%; background-color: #E44928; } }
+@media screen and (max-width: 415px) { nav { width: 100%; background-color: #E44928; } }
+@media screen and (max-width: 605px) { nav { width: 100%; background-color: #E44928; } }
+
+/*This is where the nav is styled with media queries added too*/
+/*This is where the header nav ul is styled with media queries added too*/
+header nav ul { display: block; overflow: hidden; color: #000; padding: 0px; margin: 0; text-align: right; list-style: none; font-size: 18px; padding-top: 19px; }
+@media screen and (max-width: 414px) { header nav ul { display: none; width: 100%; padding-top: 25px; background-color: #E44928; } }
+@media screen and (max-width: 415px) { header nav ul { display: none; width: 100%; padding-top: 25px; background-color: #E44928; } }
+@media screen and (max-width: 605px) { header nav ul { display: none; width: 100%; padding-top: 25px; background-color: #E44928; } }
+
+/*This is where the header nav ul is styled with media queries added too*/
+/*This is where the nav ul li is styled with media queries added too*/
+nav ul li { display: inline-block; padding: 20px; font-family: 'helvetica', arial; font-size: 17px; }
+nav ul li a { text-decoration: none; }
+@media screen and (max-width: 414px) { nav ul li { float: none; width: 100% !important; box-sizing: border-box; } }
+@media screen and (max-width: 415px) { nav ul li { float: none; width: 100% !important; box-sizing: border-box; text-align: center; } }
+@media screen and (max-width: 605px) { nav ul li { float: none; width: 100% !important; box-sizing: border-box; text-align: center; } }
+@media screen and (max-width: 768px) { nav ul li { float: left; margin: 5px 0px 5px 0px; display: inline-block; } }
+@media screen and (max-width: 1024px) { nav ul li { float: none; margin: 5px 0px 5px 0px; display: inline-block; } }
+
+/*This is where the nav ul li is styled with media queries added too*/
+/*This is where the handle class is styled with media queries added too*/
+.handle { text-align: left; box-sizing: border-box; padding: 25px 10px; cursor: pointer; display: none; }
+@media screen and (max-width: 414px) { .handle { display: block; padding-top: 2.6em; } }
+@media screen and (max-width: 415px) { .handle { display: block; padding-top: 2.6em; } }
+@media screen and (max-width: 605px) { .handle { display: block; padding-top: 2.6em; } }
+
+/*This is where the handle class is styled with media queries added too*/
+/*This is where the nav is toggled*/
+#nav-toggle { float: right; padding-right: 43px; }
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after { cursor: pointer; border-radius: 1px; height: 5px; width: 35px; background: #fff; position: absolute; display: block; content: ''; }
+
+#nav-toggle span:before { top: -10px; }
+
+#nav-toggle span:after { bottom: -10px; }
+
+/*This is where the nav is toggled*/
+/*This is where we will import any extra SASS files*/
+/*This is where we will place our variables*/
+/*This is where we will place our variables*/
+/*This is where we will style the h2 headings*/
+h2 { padding-top: 20px; padding-bottom: 20px; text-align: center; font-size: 30px; font-family: "helvetica"; color: #047051; }
+
+/*This is where we will style the h2 headings*/
+/*This is where we will style the h3 headings*/
+h3 { padding-bottom: 20px; text-align: left; font-size: 20px; font-family: "helvetica"; color: #047051; }
+
+/*This is where we will style the h3 headings*/
+/*This is where we will style the p tags and have*/
+/*media queries applied to them*/
+p { font-size: 16.5px; line-height: 1.3em; padding-top: 20px; padding-bottom: 20px; font-family: "helvetica"; }
+@media screen and (max-width: 414px) { p { padding: 25px; } }
+@media screen and (max-width: 415px) { p { padding: 25px; } }
+@media screen and (max-width: 615px) { p { padding: 25px; } }
+@media screen and (max-width: 768px) { p { padding: 25px; } }
+@media screen and (max-width: 1024px) { p { padding: 10px; } }
+
+/*This is where we will style the p tags and have*/
+/*media queries applied to them*/
+/*This is where we will style the a tags*/
+a { color: #fff; -webkit-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s; }
+
+a:hover { color: #047051; -webkit-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s; }
+
+/*This is where we will style the a tags*/
+/*This is where we will style the class locations-header*/
+/*with media queries*/
+.locations-header { padding-left: 0px; }
+@media screen and (max-width: 414px) { .locations-header { padding-left: 10px; } }
+@media screen and (max-width: 415px) { .locations-header { padding-left: 10px; } }
+@media screen and (max-width: 615px) { .locations-header { padding-left: 10px; } }
+@media screen and (max-width: 768px) { .locations-header { padding-left: 10px; } }
+@media screen and (max-width: 1024px) { .locations-header { padding-left: 10px; } }
+
+/*This is where we will style the class locations-header*/
+/*with media queries*/
+.locations { font-family: 'helvetica', arial; list-style-type: none; font-size: 16px; padding-left: 0px; }
+.locations li { padding: 0px 0px 19px 0px; }
+.locations li a { color: #000; text-decoration: none; -webkit-transition: all 0.2s ease 0s; transition: all 0.2s  ease 0s; }
+.locations li a:hover { color: #047051; -webkit-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s; text-decoration: underline; }
+@media screen and (max-width: 414px) { .locations li { padding-left: 10px; } }
+@media screen and (max-width: 415px) { .locations li { padding-left: 10px; } }
+@media screen and (max-width: 615px) { .locations li { padding-left: 10px; } }
+@media screen and (max-width: 768px) { .locations li { padding-left: 10px; } }
+@media screen and (max-width: 1024px) { .locations li { padding-left: 10px; } }
+
+/*This is where we will style the class locations-header*/
+/*with media queries*/
+/*This is where we will style the class pad-top*/
+.pad-top { padding-top: 65px; }
+
+/*This is where we will style the class pad-top*/
+/*This is where we will style the class pad-bottom*/
+.pad-bottom { padding-bottom: 65px; }
+
+/*This is where we will style the class pad-bottom*/
+/*This is where we will style the class text*/
+.text { background-color: transparent; }
+
+/*This is where we will style the class text*/
+/*This is where we will style the class banner img on the home page*/
+@media screen and (max-width: 414px) { .banner-img { width: 100%; margin: 0 auto; float: center; height: 160px; } }
+@media screen and (max-width: 415px) { .banner-img { width: 100%; margin: 0 auto; float: center; height: 160px; } }
+@media screen and (max-width: 615px) { .banner-img { max-width: 100%; margin: 0 auto; float: center; } }
+@media screen and (max-width: 745px) { .banner-img { width: 100%; margin: 0 auto; float: center; } }
+@media screen and (max-width: 768px) { .banner-img { width: 100%; } }
+@media screen and (max-width: 1024px) { .banner-img { width: 100%; } }
+
+/*This is where we will style the class banner img on the home page*/
+/*This is where we will style the class img-responsive*/
+.img-responsive { max-width: 100%; float: center; }
+@media screen and (max-width: 414px) { .img-responsive { max-width: 100%; padding: 0px 0px 0px 12px; } }
+@media screen and (max-width: 415px) { .img-responsive { max-width: 100%; padding: 0px 0px 0px 12px; } }
+@media screen and (max-width: 615px) { .img-responsive { max-width: 100%; margin: 0 auto; float: center; padding: 0px 0px 0px 10px; } }
+@media screen and (max-width: 745px) { .img-responsive { width: 95%; margin: 0 auto; float: center; padding: 0px 0px 0px 10px; } }
+
+/*This is where we will style the class img-responsive*/
+/*This is where we will style the class img-responsive-banner*/
+.img-responsive-banner { max-width: 100%; float: center; }
+@media screen and (max-width: 414px) { .img-responsive-banner { width: 90%; padding: 0px 0px 0px 0px; float: left; } }
+@media screen and (max-width: 415px) { .img-responsive-banner { width: 90%; padding: 0px 0px 0px 0px; float: left; } }
+@media screen and (max-width: 615px) { .img-responsive-banner { width: 100%; margin: 0 auto; float: center; } }
+@media screen and (max-width: 745px) { .img-responsive-banner { width: 100%; margin: 0 auto; float: center; } }
+
+/*This is where we will style the class img-responsive-banner*/
+/*This is where we will style the class danger for the contact form*/
+.danger { padding-top: 10px; color: red; font-size: 15px; }
+
+/*This is where we will style the class danger for the contact form*/
+/*This is where we will style the class forum_group for the contact form*/
+.form_group { margin: 1em 0; position: relative; font-family: 'helvetica',arial; }
+
+/*This is where we will style the class forum_group for the contact form*/
+/*This is where we will style the input fields*/
+input { margin-top: 10px; width: 280px; height: 22px; border-radius: 5px; border: 2px solid #047051; font-size: 20px; padding: 6px; }
+@media screen and (max-width: 414px) { input { width: 96%; } }
+@media screen and (max-width: 415px) { input { width: 96%; } }
+@media screen and (max-width: 615px) { input { width: 96%; } }
+
+/*This is where we will style the input fields*/
+/*This is where we will style the select fields*/
+select { margin-top: 10px; width: 295px; height: 35px; border-radius: 5px; border: 2px solid #035c42; font-size: 16px; padding: 6px; }
+@media screen and (max-width: 414px) { select { width: 100%; } }
+@media screen and (max-width: 415px) { select { width: 100%; } }
+@media screen and (max-width: 615px) { select { width: 100%; } }
+
+/*This is where we will style the select fields*/
+/*This is where we will style the id contact-form*/
+#contact-form { font-size: 16.5px; line-height: 1.3em; padding-bottom: 20px; }
+@media screen and (max-width: 414px) { #contact-form { padding: 25px; } }
+@media screen and (max-width: 415px) { #contact-form { padding: 25px; } }
+@media screen and (max-width: 615px) { #contact-form { padding: 25px; } }
+@media screen and (max-width: 768px) { #contact-form { padding: 25px; } }
+@media screen and (max-width: 1024px) { #contact-form { padding: 10px; } }
+
+/*This is where we will style the id contact-form*/
+/*This is where we will style the id map-canvas*/
+#map-canvas { height: 500px; }
+
+/*This is where we will style the id map-canvas*/
+/*This is where we will style the footer for the site*/
+footer { border-top: 18px solid #912108; padding: 10px 0px 0px 0px; margin-top: 6em; height: 9em; background-color: #C53616; width: 100%; clear: both; bottom: 0px; right: 0px /*This is where we will style the class button-top which here */ /*is the back to top button */ }
+footer .copyright-content { width: 240px; color: #fff; }
+@media screen and (max-width: 414px) { footer .copyright-content { font-size: 12px; padding-top: 0px; width: 50%; } }
+@media screen and (max-width: 415px) { footer .copyright-content { font-size: 12px; padding-top: 0px; width: 50%; } }
+footer .button-top { float: right; text-align: right; border: 3px solid #fff; border-radius: 10px; margin-top: 15px; margin-right: 15px; -webkit-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s; }
+footer .button-top p { font-size: 14px; padding: 0px 9px 0px 7px; color: #fff; }
+@media screen and (max-width: 414px) { footer .button-top { padding: 0px 8px 0px 8px; margin-right: 20px; } }
+@media screen and (max-width: 415px) { footer .button-top { padding: 0px 8px 0px 8px; margin-right: 20px; } }
+footer .button-top:hover { border: 3px solid #035c42; cursor: pointer; -webkit-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s; }
+footer .button-top:hover p { padding: 0px 9px 0px 7px; color: #035c42; -webkit-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s; }
+
+/*This is where we will style the class button-top which here */
+/*is the back to top button */
+/*This is where we will style the class active */
+.active { text-decoration: underline; }
+
+/*This is where we will style the class active */
+/*This is where we will style the submit button */
+.submit_button, .submit_button:link, .submit_button:visited { -webkit-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s; border: transparent; padding: 15px 25px 15px 25px; border-radius: 10px; background-color: #035c42; color: #fff; font-size: 18px; margin-top: 20px; }
+
+.submit_button:hover, .submit_button:focus, .submit_button:active { color: #fff; background-color: #074C38; cursor: pointer; }
+
+/*This is where we will style the submit button */
+
+/*# sourceMappingURL=styles.css.map */

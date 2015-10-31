@@ -1,0 +1,208 @@
+// This is for the gridding system in SASS. 
+
+/*This is where we define variables*/
+$full-width: 100%;
+$minimum-width: 320px;
+$maximum-width: 960px;
+$row-padding: 10px;
+$grey: #333;
+$value-zero: 0px;
+$row-min-height: 40px;
+$row-border-radius: 10px;
+$row-right-margin: 2.5%;
+$row-left-margin: 2.5%;
+$left-float: left;
+$padding-top-bottom-container: 65px;
+$width-xsmall: 414px;
+$width-small:  415px;
+$width-xmedium: 615px;
+$width-medium: 768px;
+$width-large:  1024px;
+/*This is where we define variables*/
+
+/*This is where we style the body to be default zero*/
+body{
+ margin: $value-zero;
+ padding: $value-zero;
+}
+/*This is where we style the body to be default zero*/
+
+/*This is to style the container class that will hold our content*/
+.container{
+	min-width: $minimum-width;
+	max-width: $maximum-width;
+	margin: 0 auto;	
+}
+/*This is to style the container class that will hold our content*/
+
+/*This is to style the row*/
+.row{
+	width: $full-width;
+	float: $left-float;
+}
+/*This is to style the row*/
+
+/*This is to style the different sized columns*/
+/*This includes the media queries for the columns.*/
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, 
+.col-7, .col-8, .col-9, .col-10, .col-11, .col-12,{
+	min-height: $row-min-height;
+	margin-left: $row-left-margin;
+	display: inline-block;
+	float: $left-float;
+	margin: 0px 0px 5px 18px;
+
+//This media query is for smaller Mobile size
+	@media screen and (max-width:$width-xsmall){
+		float: none;
+		width: 100% !important;
+		 margin: 0px 0px 5px 0px;
+		 box-sizing: border-box;
+		 padding: $value-zero;
+	}
+
+//This media query is for Mobile size
+	@media screen and (max-width:$width-small){
+		float: none;
+		width: 100% !important;
+		margin: 0px 0px 5px 0px;
+		box-sizing: border-box;
+	}
+
+//This media query is for 605px
+	@media screen and (max-width:$width-xmedium){
+		float: none;
+		width: 100% !important;
+		margin: 0px 0px 5px 0px;
+		box-sizing: border-box;
+	}
+
+//This media query is for Ipad Portrait
+	@media screen and (max-width:$width-medium){
+		 float: left;
+		 margin: 0px 0px 5px 0px;
+	}
+
+//This media querie is for Ipad landscape
+		@media screen and (max-width:$width-large){
+	}
+}
+/*This is to style the different sized columns*/
+/*This includes the media queries for the columns.*/
+
+
+/*The first child classes here will ensure that each of the */
+/*first classes here will have a margin-left value of 0 */
+.col-1:first-child, .col-2:first-child, .col-3:first-child, .col-4:first-child,
+.col-5:first-child, .col-6:first-child, .col-7:first-child, .col-8:first-child,
+.col-9:first-child, .col-10:first-child, .col-11:first-child, .col-12:first-child
+{
+  margin-left: $value-zero;
+}
+/*The first child classes here will ensure that each of the */
+/*first classes here will have a margin-left value of 0 */
+
+
+/*The first child classes here will ensure that each of the */
+/*first classes here will have a margin-right value of 0 */
+.col-1:last-child, .col-2:last-child, .col-3:last-child, .col-4:last-child,
+.col-5:last-child, .col-6:last-child, .col-7:last-child, .col-8:last-child,
+.col-9:last-child, .col-10:last-child, .col-11:last-child, .col-12:last-child
+{
+  margin-right: $value-zero;
+}
+/*The first child classes here will ensure that each of the */
+/*first classes here will have a margin-right value of 0 */
+
+/*The first col size */
+.col-1 {
+    width: 6%;
+}
+/*The first col size */
+
+
+/*The second col size */
+.col-2 {
+    width: 14.55%;
+}
+/*The second col size */
+
+
+/*The third col size */
+.col-3 {
+    width: 23.1%;
+}
+/*The third col size */
+
+
+/*The forth col size */
+.col-4 {
+    width: 31.6333%;
+}
+/*The forth col size */
+
+
+/*The fifth col size */
+.col-5{
+	width: 40.93%;
+}
+/*The fifth col size */
+
+
+/*The sixth col size */
+.col-6{
+	width: 48.6%;
+}
+/*The sixth col size */
+
+
+/*The seventh col size */
+.col-7{
+	width: 56.333%;
+}
+/*The seventh col size */
+
+
+/*The eighth col size */
+.col-8 {
+	width: 65.38%;
+}
+/*The eighth col size */
+
+
+/*The ninth col size */
+.col-9 {
+	width: 74%;
+}
+/*The ninth col size */
+
+
+/*The tenth col size */
+.col-10 {
+	width: 82.633%;
+}
+/*The tenth col size */
+
+
+/*The eleventh col size */
+.col-11 {
+    width: 91%;
+}
+/*The eleventh col size */
+
+
+/*The twelfth col size */
+.col-12 {
+    width: 100%;
+}
+/*The twelfth col size */
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,275 @@
+/*This is where we will place our variables*/
+
+$headerColor: #E44928;
+$header-height: 80px;
+$full-width: 100%;
+$whiteText: #fff;
+
+$width-xsmall:  414px;
+$width-small:  415px;
+$width-xmedium: 605px;
+$width-medium: 768px;
+$width-large:  1024px;
+
+$padding-top-header: 8px;
+$padding-bottom-header: 10px;
+$padding-top-header-nav-ul: 25px;
+$value-zero: 0px;
+$font-weight-header-h1: 10px;
+$font-size-header-h1: 20px;
+$margin-zero: 0;
+$italic-header-padding-top: 30px;
+$nav-font-size: 18px;
+$nav-padding-top: 19px;
+
+$green: #047051;
+$black: #000;
+
+$nav-li-padding: 20px;
+$nav-li-font-size: 17px;
+
+/*This is where we will place our variables*/
+
+/*This is where the header is styled for the website*/
+header{
+	background-color: $headerColor;
+	padding-top: $padding-top-header;
+	padding-bottom: $padding-bottom-header;
+	color:  $whiteText;
+	text-align: left;
+	height: $header-height;
+	width: $full-width;
+}
+/*This is where the header is styled for the website*/
+
+
+/*This is where the header h1 logo is styled for the website*/
+/*We have also included media queries for this websites header h1*/
+header h1 {
+	margin: $margin-zero;
+	padding: .50em .55em .55em .35em;
+	font-family: 'helvetica', arial;
+	font-size:$font-size-header-h1;
+	font-weight: $font-weight-header-h1;
+
+	i{
+		padding-top: $italic-header-padding-top;
+		color: $green;
+	}
+
+  //This media query is for smaller Mobile size
+  @media screen and (max-width:$width-xsmall){
+  	padding: .50em .55em .55em 0.8em;
+  }
+
+ //This media query is for Mobile size
+ @media screen and (max-width:$width-small){
+ 	padding: .50em .55em .55em 0.8em;
+ }
+
+//This media query is for 605px
+@media screen and (max-width:$width-xmedium){
+	padding: .50em .55em .55em 0.8em;
+}	
+
+
+//This media query is for Ipad Portrait
+@media screen and (max-width:$width-medium){
+	float: left;
+	padding: .50em .55em .55em 0.8em;
+}
+
+//This media query is for Ipad Portrait
+@media screen and (max-width:$width-large){
+	float: left;
+	padding: .50em .55em .55em 0.8em;
+}
+}
+/*This is where the header h1 logo is styled for the website*/
+/*We have also included media queries for this websites header h1*/
+
+/*This is where the id logo is styled*/
+#logo {
+	float: left;
+	display: flex;
+}
+/*This is where the id logo is styled*/
+
+/*This is where the nav is styled with media queries added too*/
+nav{
+	float:right;
+
+   	//This media query is for smaller Mobile size
+   	@media screen and (max-width:$width-xsmall){
+   		width: $full-width;
+   		background-color: $headerColor;
+   	}
+
+//This media query is for Mobile size
+@media screen and (max-width:$width-small){
+	width: $full-width;
+	background-color: $headerColor;
+
+	}
+
+//This media query is for 605px
+@media screen and (max-width:$width-xmedium){
+	width: $full-width;
+	background-color: $headerColor;
+
+	}	
+}
+/*This is where the nav is styled with media queries added too*/
+
+/*This is where the header nav ul is styled with media queries added too*/
+header nav ul {
+	display: block;
+	overflow: hidden;
+	color: $black;
+	padding: $value-zero;
+	margin: $margin-zero;
+	text-align: right;
+	list-style: none;
+	font-size: $nav-font-size;
+	padding-top: $nav-padding-top;
+
+
+
+   	//This media query is for smaller Mobile size
+   	@media screen and (max-width:$width-xsmall){
+   		display:none;
+   		width: $full-width;
+   		padding-top:$padding-top-header-nav-ul;
+   		background-color: $headerColor;
+
+   	}
+
+	//This media query is for Mobile size
+	@media screen and (max-width:$width-small){
+		display:none;
+		width: $full-width;
+		padding-top:$padding-top-header-nav-ul;
+		background-color: $headerColor;
+
+	}
+
+	//This media query is for 605px
+	@media screen and (max-width:$width-xmedium){
+		display:none;
+		width: $full-width;
+		padding-top:$padding-top-header-nav-ul;
+		background-color: $headerColor;
+	}
+}
+/*This is where the header nav ul is styled with media queries added too*/
+
+/*This is where the nav ul li is styled with media queries added too*/
+
+nav ul li{
+	display: inline-block;
+	padding: $nav-li-padding;
+	font-family: 'helvetica', arial;
+	font-size: $nav-li-font-size;
+
+	a{
+		text-decoration: none;
+	}
+
+//This media query is for smaller Mobile size
+@media screen and (max-width:$width-xsmall){
+		float: none;
+		width: $full-width !important;
+		box-sizing: border-box;
+	}
+
+//This media query is for Mobile size
+@media screen and (max-width:$width-small){
+		float: none;
+		width: $full-width !important;
+		box-sizing: border-box;
+		text-align: center;
+	}
+
+//This media query is for 605px
+@media screen and (max-width:$width-xmedium){
+		float: none;
+		width: $full-width !important;
+		box-sizing: border-box;
+		text-align: center;
+	}
+
+//This media query is for Ipad Portrait
+@media screen and (max-width:$width-medium){
+		float: left;
+		margin: 5px 0px 5px 0px;
+		display: inline-block;
+	}
+
+
+//This media querie is for Ipad landscape
+@media screen and (max-width:$width-large){
+		float: none;
+		margin: 5px 0px 5px 0px;
+		display: inline-block;
+	}
+
+}
+/*This is where the nav ul li is styled with media queries added too*/
+
+
+/*This is where the handle class is styled with media queries added too*/
+.handle{
+	text-align: left;
+	box-sizing: border-box;
+	padding: 25px 10px;
+	cursor: pointer;
+	display: none;
+
+
+	//This media query is for smaller Mobile size
+	@media screen and (max-width:$width-xsmall){
+		display: block;
+		padding-top: 2.6em;
+	}
+
+	//This media query is for Mobile size
+	@media screen and (max-width:$width-small){
+		display: block;
+		padding-top: 2.6em;
+
+	}
+
+	//This media query is for 605px
+	@media screen and (max-width:$width-xmedium){
+		display: block;
+		padding-top: 2.6em;
+
+		}
+	}
+/*This is where the handle class is styled with media queries added too*/
+
+/*This is where the nav is toggled*/
+	#nav-toggle{
+		float: right;
+		padding-right: 43px;
+	}
+
+	#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+		cursor: pointer;
+		border-radius: 1px;
+		height: 5px;
+		width: 35px;
+		background: $whiteText;
+		position: absolute;
+		display: block;
+		content: '';
+	}
+
+	#nav-toggle span:before {
+		top: -10px;
+	}
+	#nav-toggle span:after {
+		bottom: -10px; 
+	}
+/*This is where the nav is toggled*/
+
