@@ -12,6 +12,11 @@ body { margin: 0px; padding: 0px; }
 /*This is to style the row*/
 .row { width: 100%; float: left; }
 
+
+.rotate{
+	transform: rotate(90deg);
+}
+
 /*This is to style the row*/
 /*This is to style the different sized columns*/
 /*This includes the media queries for the columns.*/
@@ -137,13 +142,27 @@ nav ul li a { text-decoration: none; }
 
 /*This is where the handle class is styled with media queries added too*/
 /*This is where the nav is toggled*/
+
+.handle{ width: 50%; float: right;}
+
 #nav-toggle { float: right; padding-right: 43px; }
 
-#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after { cursor: pointer; border-radius: 1px; height: 5px; width: 35px; background: #fff; position: absolute; display: block; content: ''; }
+#nav-toggle span.top { cursor: pointer; border-radius: 50%; height: 5px; width: 40px; background: #fff; position: absolute; display: block; content: ''; top: 35px; transition:all, 0.1s linear;
+}
 
-#nav-toggle span:before { top: -10px; }
+#nav-toggle span.middle { cursor: pointer; border-radius: 50%; height: 5px; width: 40px; background: #fff; position: absolute; display: block; content: ''; }
 
-#nav-toggle span:after { bottom: -10px; }
+#nav-toggle span.bottom { cursor: pointer; border-radius: 50%; height: 5px; width: 40px; background: #fff; position: absolute; display: block; content: ''; top: 65px; transition:all, 0.1s linear;}
+
+#nav-toggle span.top.top-shrink{
+	top: 50px;
+	transition:all, 0.1s linear;
+}
+
+#nav-toggle span.bottom.bottom-shrink{
+	transition:all, 0.1s ease-in-out;
+	top: 50px;
+}
 
 /*This is where the nav is toggled*/
 /*This is where we will import any extra SASS files*/
@@ -272,8 +291,8 @@ select { margin-top: 10px; width: 295px; height: 35px; border-radius: 5px; borde
 /*This is where we will style the footer for the site*/
 footer { border-top: 18px solid #912108; padding: 10px 0px 0px 0px; margin-top: 6em; height: 9em; background-color: #C53616; width: 100%; clear: both; bottom: 0px; right: 0px /*This is where we will style the class button-top which here */ /*is the back to top button */ }
 footer .copyright-content { width: 240px; color: #fff; }
-@media screen and (max-width: 414px) { footer .copyright-content { font-size: 12px; padding-top: 0px; width: 50%; } }
-@media screen and (max-width: 415px) { footer .copyright-content { font-size: 12px; padding-top: 0px; width: 50%; } }
+@media screen and (max-width: 414px) { footer .copyright-content { font-size: 12px; padding-top: 0px; width: 53%; } }
+@media screen and (max-width: 415px) { footer .copyright-content { font-size: 12px; padding-top: 0px; width: 53%; } }
 footer .button-top { float: right; text-align: right; border: 3px solid #fff; border-radius: 10px; margin-top: 15px; margin-right: 15px; -webkit-transition: all 0.2s ease 0s; transition: all 0.2s ease 0s; }
 footer .button-top p { font-size: 14px; padding: 0px 9px 0px 7px; color: #fff; }
 @media screen and (max-width: 414px) { footer .button-top { padding: 0px 8px 0px 8px; margin-right: 20px; } }

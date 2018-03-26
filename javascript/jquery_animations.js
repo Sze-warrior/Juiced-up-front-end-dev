@@ -2,7 +2,11 @@
 //to make the mobile menu slide toggle down and appear.
 $(document).ready(function(){
 	$(".handle").click(function(){
-  	$(".navbar").slideToggle();
+  	$(".navbar").slideToggle(180);
+
+  	$(".top").toggleClass('top-shrink');
+  	$(".bottom").toggleClass('bottom-shrink');
+
   });
 
 $(window).resize(function() {

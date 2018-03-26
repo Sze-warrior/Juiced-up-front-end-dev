@@ -1,0 +1,22 @@
+.handle{    width: 60px; float: right;}
+
+#nav-toggle { float: right; padding-right: 43px; }
+
+#nav-toggle span.top { cursor: pointer; border-radius: 1px; height: 5px; width: 40px; background: #fff; position: absolute; display: block; content: ''; top: 35px; transition:all, 0.15s linear opacity:1;
+}
+
+#nav-toggle span.middle { cursor: pointer; border-radius: 1px; height: 5px; width: 40px; background: #fff; position: absolute; display: block; content: ''; }
+
+#nav-toggle span.bottom { cursor: pointer; border-radius: 1px; height: 5px; width: 40px; background: #fff; position: absolute; display: block; content: ''; top: 65px; transition:all, 0.15s linear; opacity:1;}
+
+#nav-toggle span.top.top-shrink{
+	top: 50px;
+	transition:all, 0.15s linear;
+	opacity:0;
+}
+
+#nav-toggle span.bottom.bottom-shrink{
+	transition:all, 0.15s ease-in-out;
+	top: 50px;
+	opacity:0;
+}
